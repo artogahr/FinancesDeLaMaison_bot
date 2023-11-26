@@ -12,7 +12,6 @@ RUN cargo build --release
 # But beware that some images have old glibc which makes rust unhappy
 FROM fedora:latest AS runner
 COPY --from=builder /prod/target/release/finances-bot /bin
-ENV TELOXIDE_TOKEN=
 
 CMD ["/bin/finances-bot"]
 
