@@ -1,0 +1,14 @@
+# fly.toml app configuration file generated for finances-bot on 2023-11-26T19:15:10+01:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "finances-bot"
+primary_region = "waw"
+
+[build]
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 1024
